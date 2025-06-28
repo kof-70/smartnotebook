@@ -1,0 +1,102 @@
+name: smart_notebook
+description: A privacy-respecting AI-enhanced personal notebook
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.19.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_bloc: ^8.1.3
+  equatable: ^2.0.5
+  
+  # Supabase
+  supabase_flutter: ^2.0.0
+  
+  # Authentication
+  google_sign_in: ^6.1.5
+  sign_in_with_apple: ^5.0.0
+  
+  # Local Database
+  sqflite: ^2.3.0
+  floor: ^1.4.2
+  
+  # File System & Media
+  path_provider: ^2.1.1
+  permission_handler: ^11.0.1
+  file_picker: ^6.1.1
+  image_picker: ^1.0.4
+  
+  # Audio Recording/Playing
+  record: ^5.0.4
+  audioplayers: ^5.2.1
+  
+  # Video Recording
+  camera: ^0.10.5+5
+  video_player: ^2.7.2
+  
+  # Networking
+  http: ^1.1.0
+  dio: ^5.3.2
+  connectivity_plus: ^5.0.1
+  
+  # Security & Encryption
+  crypto: ^3.0.3
+  encrypt: ^5.0.1
+  local_auth: ^2.1.6
+  flutter_secure_storage: ^9.0.0
+  
+  # UI & Theming
+  material_color_utilities: ^0.5.0
+  dynamic_color: ^1.6.8
+  
+  # Utilities
+  intl: ^0.18.1
+  uuid: ^4.1.0
+  mime: ^1.0.4
+  path: ^1.8.3
+  
+  # Background Tasks
+  workmanager: ^0.5.1
+  
+  # Get It for Dependency Injection
+  get_it: ^7.6.4
+  
+  # Either for error handling
+  dartz: ^0.10.1
+  
+  # Sharing functionality
+  share_plus: ^7.2.1
+  
+  # Preferences
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  build_runner: ^2.4.7
+  floor_generator: ^1.4.2
+  mockito: ^5.4.2
+  bloc_test: ^9.1.4
+  integration_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
